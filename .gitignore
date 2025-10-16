@@ -1,0 +1,41 @@
+# ===========================
+# SPARK CHECKPOINTS / TEMP
+# ===========================
+.checkpoints/
+checkpoints/
+**/checkpoint/
+**/checkpoints/
+**/.spark-staging/
+**/.spark_local_temp/
+**/.spark_sql/
+**/.tmp/
+**/*.crc
+**/_SUCCESS*
+**/*.parquet
+**/*.orc
+**/*.tmp
+**/.DS_Store
+
+# ===========================
+# OUTPUTS — IGNORE EVERYTHING BY DEFAULT
+# ===========================
+
+# --- Task 1 ---
+outputs/task_1/**
+!outputs/task_1/part-00000-0a297e5a-4114-4a9a-8b51-1639f2de2502-c000.csv
+!outputs/task_1/part-00000-0bd27890-0107-4621-8558-3d339de2a75a-c000.csv
+!outputs/task_1/part-00000-0c8cab00-3465-4feb-ad80-e85ca756ae11-c000.csv
+!outputs/task_1/part-00000-0dd7ddc9-3d45-41e3-8105-29e9a1d1ccf4-c000.csv
+!outputs/task_1/part-00000-1ba7068e-c0c9-4c65-847e-6ecb6d7e590a-c000.csv
+
+# --- Task 2 ---
+outputs/task_2/**
+!outputs/task_2/epoch=0/part-00000-1d063605-1619-4b78-bb38-db4760c73549-c000.csv
+!outputs/task_2/epoch=1/part-00000-0e3239ca-1a69-4154-b45f-800a03a28e48-c000.csv
+!outputs/task_2/epoch=2/part-00000-61a0e396-d950-415e-bfe9-e18fb7f2039a-c000.csv
+
+# --- Task 3 ---
+outputs/task_3/**
+!outputs/task_3/epoch=0/part-00000-2e31dbf8-76d9-4208-9457-5c2ee45fcb95-c000.csv
+!outputs/task_3/epoch=1/part-00000-5e563eff-a199-486e-9dc9-a893174d375d-c000.csv
+!outputs/task_3/epoch=2/part-00000-769ca63f-35ec-4cde-9713-aece81db3b1c-c000.csv
